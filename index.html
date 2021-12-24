@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Christmas Present</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+      <div class="streifen"></div>
+    </div>
+    <div class="content">
+      <h1>frohe weihnachten</h1>
+      <img src="./IMG_1776.gif" alt="" />
+      <div class="present">
+        <div class="deko1"></div>
+        <div class="deko2"></div>
+      </div>
+    </div>
+
+    <script>
+      const present = document.querySelector(".present");
+      const content = document.querySelector(".content");
+
+      present.addEventListener("click", function () {
+        content.classList.add("open");
+      });
+    </script>
+  </body>
+</html>
